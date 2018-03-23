@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# ShuntResistor
+#
+DEF ShuntResistor SH-R 0 40 Y N 1 F N
+F0 "SH-R" 50 250 50 H V C CNN
+F1 "ShuntResistor" 50 150 50 H V C CNN
+F2 "" 50 -50 50 H I C CNN
+F3 "" 50 -50 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+A -76 50 49 1800 889 0 1 10 N -125 50 -75 100
+A -50 25 79 1616 1084 0 1 10 N -125 50 -75 100
+A 100 25 79 716 184 0 1 10 N 125 100 175 50
+A 125 51 49 900 -11 0 1 10 N 125 100 175 50
+S -125 50 -75 0 0 1 10 F
+S -75 100 -60 50 0 1 10 F
+S 110 100 125 50 0 1 10 F
+S 125 50 175 0 0 1 10 F
+P 5 0 1 10 -75 100 -75 50 -125 50 -75 100 -75 50 F
+P 5 0 1 10 125 100 125 50 175 50 125 100 125 50 F
+P 6 0 1 4 115 50 -60 50 -60 100 -50 100 110 100 110 55 N
+P 12 0 1 4 -60 75 -30 75 -20 90 -10 60 5 90 15 60 30 90 40 60 55 90 65 60 75 80 110 80 N
+X Pin_1 1 -100 -100 98 U 50 50 1 1 P
+X Pin_2 2 150 -100 98 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
